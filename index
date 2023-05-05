@@ -28,10 +28,10 @@ def User_Authorization(API_Key, API_Key_Secret, Access_Token, Access_Token_Secre
     return api
 
 
-#Go to WRBOLEN twitter account and scrape up to 200 tweets
+#Go to twitter account and scrape up to 200 tweets
 def Return_Tweets(api):
     #username to search for
-    userName = "WRBolen"
+    userName = "User_Name"
 
     # make initial request for most recent tweets (200 is the maximum allowed count)
     tweets = api.user_timeline(screen_name=userName, count=200)
@@ -59,7 +59,7 @@ def Filter_Tweets(tweets):
 #Load filtered tweets into SQL Server
 def Load_Into_SQL_Server(Filtered_Tweets):
     conn = pyodbc.connect('DRIVER={SQL Server Native Client 11.0};'
-                          'SERVER=DESKTOP-OFNPJHO;'
+                          'SERVER=Server;'
                           'DATABASE=WRB_Tweets;'
                           'Trusted_Connection=yes')
 
@@ -83,11 +83,5 @@ Returned_Api_Auth = User_Authorization(API_Key, API_Key_Secret, Access_Token, Ac
 Returned_Tweets = Return_Tweets(Returned_Api_Auth)
 Returned_Filtered_Tweets = Filter_Tweets(Returned_Tweets)
 Load_Into_SQL_Server(Returned_Filtered_Tweets)
-
-
-
-
-
-
 
 
