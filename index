@@ -4,12 +4,12 @@ import tweepy
 import pyodbc
 
 # Keys needed to access twitter API
-API_Key = "tEYoH7DDMl08BZ0jeqSmKoBes"
-API_Key_Secret = "kmqga6f3O9BTUeMvr2GmwuPBh5oPeOKBabIY8c9X1KFk3A2ZEW"
-Bearer_Token = "AAAAAAAAAAAAAAAAAAAAALjKKAEAAAAAaMImjz4mHOyJQP0TXU0mm" \
-               "LH1%2F6w%3DXaISSI7jKQ07TbuQqndoeT6JEErH0szsJLzc5k4V3JJmbUHtJV"
-Access_Token = "616248304-gUwelxJk1igM535QFDcxTyhnacaummc4Zp40MBhZ"
-Access_Token_Secret = "58z7wbGfAuDmvx2EsSEhcaPWQVDNMzvxsS9GipDrkBBSJ"
+API_Key = "*******"
+API_Key_Secret = "********"
+Bearer_Token = "********" \
+               "********"
+Access_Token = "********"
+Access_Token_Secret = "*******"
 
 
 #Connect to Twitter through API
