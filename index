@@ -83,5 +83,3 @@ Returned_Api_Auth = User_Authorization(API_Key, API_Key_Secret, Access_Token, Ac
 Returned_Tweets = Return_Tweets(Returned_Api_Auth)
 Returned_Filtered_Tweets = Filter_Tweets(Returned_Tweets)
 Load_Into_SQL_Server(Returned_Filtered_Tweets)
-
-
